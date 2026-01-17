@@ -82,7 +82,7 @@ class PokemonInfo {
     }
     
     get name() {
-        return `${this._name.toUpperCase()}`
+        return `${this._capitalize(this._name)}`
     }
 
     get types() {

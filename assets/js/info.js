@@ -6,12 +6,17 @@ function setHeaderValues(pokemon) {
     const htmlName = document.querySelector('.pokemon__name')
     const htmlTypes = document.querySelector('.pokemon__types')
     const htmlImg = document.querySelector('.pokemon__image')
-    
+    const htmlIcon = document.querySelector('#flavicon')
+
     document.body.classList.add(pokemon ? pokemon.type : '')
+    document.title = pokemon ? `${pokemon.name}` : 'Sobre'
+    htmlIcon.href = pokemon ? pokemon.image : './assets/img/pokeball-fill.svg'
     htmlId.textContent = pokemon ? pokemon.id : '-'
     htmlName.textContent = pokemon ? pokemon.name : '-'
     htmlTypes.innerHTML = pokemon.types.map((type) => `<li class="pokemon__type">${type}</li>`).join('')
     htmlImg.src = pokemon ? pokemon.image : 'https://via.placeholder.com/250x250'
+
+    console.log(pokemon._sprites.front_default)
 
 }
 
