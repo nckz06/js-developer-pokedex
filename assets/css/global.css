@@ -1,20 +1,33 @@
-* {
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-}
+@import url('reset.css');
+@import url('pokemons-type.css');
+
+
 
 body {
-    background-color: #f6f8fc;
+    padding: 1rem;
+    overflow-x: hidden;
+}
+
+header {
+    margin: 0;
 }
 
 .content {
-    width: 100vw;
     height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
+    width: 100%;
 }
 
+
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 992px) {
+    header {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+
     .content {
         max-width: 992px;
         height: auto;

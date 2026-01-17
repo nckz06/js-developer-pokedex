@@ -1,0 +1,105 @@
+:root {
+    --normal-type: #a6a877;
+    --grass-type: #77c850;
+    --fire-type: #ee7f30;
+    --water-type: #678fee;
+    --electric-type: #f7cf2e;
+    --ice-type: #98d5d7;
+    --ground-type: #dfbf69;
+    --flying-type: #a98ff0;
+    --poison-type: #a040a0;
+    --fighting-type: #bf3029;
+    --psychic-type: #f65687;
+    --dark-type: #725847;
+    --rock-type: #b8a137;
+    --bug-type: #a8b720;
+    --ghost-type: #6e5896;
+    --steel-type: #b9b7cf;
+    --dragon-type: #6f38f6;
+    --fairy-type: #f9aec7;
+    --text-color-primary: #000;
+    --text-color-secundary: #fff;
+    --bg-fill-type: rgba(255, 255, 255, .2)
+}
+
+.normal {
+    background-color: var(--normal-type);
+}
+
+.grass {
+    background-color: var(--grass-type);
+}
+
+.fire {
+    background-color: var(--fire-type);
+}
+
+.water {
+    background-color: var(--water-type);
+}
+
+.electric {
+    background-color: var(--electric-type);
+    color: var(--text-color-primary);
+}
+
+.ice {
+    background-color: var(--ice-type);
+}
+
+.ground {
+    background-color: var(--ground-type);
+    color: var(--text-color-primary);
+}
+
+.flying {
+    background-color: var(--flying-type);
+}
+
+.poison {
+    background-color: var(--poison-type);
+}
+
+.fighting {
+    background-color: var(--fighting-type);
+}
+
+.psychic {
+    background-color: var(--psychic-type);    
+}
+
+.dark {
+    background-color: var(--dark-type);
+}
+
+.rock {
+    background-color: var(--rock-type);
+}
+
+.bug {
+    background-color: var(--bug-type);
+}
+
+.ghost {
+    background-color: var(--ghost-type);
+}
+
+.steel {
+    background-color: var(--steel-type);
+}
+
+.dragon {
+    background-color: var(--dragon-type);
+}
+
+.fairy {
+    background-color: var(--fairy-type);
+}
+
+
+
+/* LISTA DE ELEMENTOS DENTRO DE .pokemon__type */
+.pokemon__type {
+    background-color: var(--bg-fill-type);
+    color: #fff;
+}
